@@ -26,6 +26,8 @@ body, html {height: 100%}
 <video autoplay muted loop id="myVideo">
   <source src="media/bg.mp4" type="video/mp4">
 </video>
+  
+  <iframe name="void" style="display: none"></iframe>
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white" style='display: none' id='all'>
   <div class="w3-display-topleft w3-padding-large w3-xlarge" style="font-family: 'Goldman', cursive;">
@@ -37,7 +39,7 @@ body, html {height: 100%}
     <p class="w3-wide w3-center">
         <span class="w3-border w3-padding-small">info@cymat.ai</span>
         
-         <form style="margin:auto; width:60%; display:none" action="https://formspree.io/f/xleoldzg" method="POST">
+         <form style="margin:auto; width:60%; display:none" action="https://formspree.io/f/xleoldzg" method="POST" target="void">
           <div class="w3-section">
             <label><b>Name</b></label>
             <input class="w3-input w3-border" type="text" required name="name">
