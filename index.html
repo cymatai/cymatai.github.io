@@ -29,7 +29,7 @@ body, html {height: 100%}
   
   <iframe name="void" style="display: none"></iframe>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white" style='display: none' id='all'>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white" style='display: none' id='all'  onclick="document.getElementById('contact').style.display='none'">
   <div class="w3-display-topleft w3-padding-large w3-xlarge" style="font-family: 'Goldman', cursive;">
     Cymat<span style="color: #00CDFF">AI</span>
   </div>
@@ -56,7 +56,7 @@ body, html {height: 100%}
               <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
             </form> -->
       
-      <div id="contact" class="w3-modal" onclick="this.style.display='none'">
+      <div id="contact" class="w3-modal">
              <form style="margin:auto; width:60%; display:block" action="https://formspree.io/f/xleoldzg" method="POST" target="void">
               <div class="w3-section">
                 <label><b>Name</b></label>
@@ -89,7 +89,7 @@ body, html {height: 100%}
   });
   
   function openContact() {
-  document.getElementById('contact').style.display='block'
+  document.getElementById('contact').style.display='block';
   }
 </script>
 
