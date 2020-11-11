@@ -29,7 +29,7 @@ body, html {height: 100%}
   
   <iframe name="void" style="display: none"></iframe>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white" style='display: none' id='all'  onclick="document.getElementById('contact').style.display='none'">
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white" style='display: none' id='all'>
   <div class="w3-display-topleft w3-padding-large w3-xlarge" style="font-family: 'Goldman', cursive;">
     Cymat<span style="color: #00CDFF">AI</span>
   </div>
@@ -37,46 +37,7 @@ body, html {height: 100%}
     <h1 class="w3-jumbo w3-center">COMING SOON</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-wide w3-center">
-      
-          <button onclick="openContact()" class="w3-button w3-border w3-hover-blue">CONTACT</button>
-
- <!--            <form style="margin:auto; width:60%; display:none" action="https://formspree.io/f/xleoldzg" method="POST" target="void">
-              <div class="w3-section">
-                <label><b>Name</b></label>
-                <input class="w3-input w3-border" type="text" required name="name">
-              </div>
-              <div class="w3-section">
-                <label><b>Email</b></label>
-                <input class="w3-input w3-border" type="text" required name="_replyto">
-              </div>
-              <div class="w3-section">
-                <label><b>Message</b></label>
-                <input class="w3-input w3-border" required name="message">
-              </div>
-              <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-            </form> -->
-      
-      <div id="contact" class="w3-modal">
-             <form style="margin:auto; width:60%; display:block" action="https://formspree.io/f/xleoldzg" method="POST" target="void">
-              <div class="w3-section">
-                <label><b>Name</b></label>
-                <input class="w3-input w3-border" type="text" required name="name">
-              </div>
-              <div class="w3-section">
-                <label><b>Email</b></label>
-                <input class="w3-input w3-border" type="text" required name="_replyto">
-              </div>
-              <div class="w3-section">
-                <label><b>Message</b></label>
-                <input class="w3-input w3-border" required name="message">
-              </div>
-              <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-            </form>
-      </div>
-
-        
-
-      
+          <button class="w3-button w3-border w3-hover-blue">info@cymat.ai</button>      
     </p>
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
@@ -87,10 +48,6 @@ body, html {height: 100%}
   $(window).load(function() {
     $('#all').show('slow');
   });
-  
-  function openContact() {
-  document.getElementById('contact').style.display='block';
-  }
 </script>
 
 </body>
