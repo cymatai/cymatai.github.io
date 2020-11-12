@@ -37,7 +37,7 @@ body, html {height: 100%}
     <h1 class="w3-jumbo w3-center">COMING SOON</h1>
     
     <div class="w3-center" id="intro">
-      <video autoplay muted width="240" height="240" id="faces">
+      <video autoplay muted width="240" height="240" id="faces" onended="collapse()">
         <source src="media/faces.mp4" type="video/mp4">
       </video>
     </div>
@@ -58,8 +58,10 @@ body, html {height: 100%}
     curVid.pause();
     curVid.currentTime = '0';
     curVid.play();
-    $("#intro").slideToggle("slow");
   });
+  function collapse(){
+    $("#intro").slideUp("slow");
+  }
 </script>
 
 </body>
